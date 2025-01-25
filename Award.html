@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Penghargaan Desa Blega</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="logo bangkalan mdr.png" alt="Logo Desa"></a>
+            <div class="nav-link" id="navLink">
+                <i class="fa fa-times" id="closeMenu"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="Profile.html">PROFILE</a></li>
+                    <li><a href="#">AWARD</a></li>
+                    <li><a href="SERVICE.html">SERVICE</a></li>
+                    <li><a href="CONTACT.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" id="openMenu"></i>
+        </nav>
+        <div class="text-box">
+            <h1>Penghargaan Desa Blega</h1>
+            <p>Prestasi dan Pengakuan atas Dedikasi Desa Blega</p>
+        </div>
+    </section>
+
+    <section class="awards">
+        <h1>Penghargaan Desa</h1>
+        <p>Berikut adalah daftar penghargaan yang telah diraih Desa Blega sebagai bukti dari upaya dan dedikasi dalam pembangunan masyarakat dan pelestarian budaya:</p>
+        
+        <div class="row">
+            <div class="award-col">
+                <img src="award stand booth.webp" alt="Penghargaan Stand Booth Terfavorit">
+                <h3>Penghargaan Stand Booth Terfavorit</h3>
+                <p>Koordinator Bidang Pendidikan Kecamatan Blega didapuk sebagai Juara Tiga Stand Booth Terfavorit Madura Awards (MA) 2024.</p>
+            </div>
+            <div class="award-col">
+                <img src="award kesehatan.webp" alt="Penghargaan Inovasi Pelayanan Publik">
+                <h3>Penghargaan Inovasi Pelayanan Publik</h3>
+                <p>Kerja keras Puskesmas Blega berbuah manis. Puskesmas ini mendapatkan penghargaan tingkat provinsi. Prestasi tersebut sekaligus menjadi tiket untuk menuju tingkat nasional, pada kamis, 7 Desember 2017.</p>
+            </div>
+            <div class="award-col">
+                <img src="award lingkungan.webp" alt="Penghargaan Peduli Kelestarian Sungai Blega">
+                <h3>Penghargaan Peduli Kelestarian Sungai Blega</h3>
+                <p>AMB2 mendapatkan penghargaan dari Pemerintah Provinsi Jawa Timur sebagai Komunitas Masyarakat Peduli Sungai,di acara Apel Kesiapsiagaan dampak bencana banjir Tahun 2024/2025 di Kabupaten Kediri Selasa (05/11).</p>
+            </div>
+            <div class="award-col">
+                <img src="award pengabdian.jpg" alt="Penghargaan Pengabdian">
+                <h3>Penghargaan Penghargaan Pengabdian</h3>
+                <p>Salah seorang Bintara Pembina Desa (Babinsa) mendapatkan Reward (penghargaan dari Kapolres Bangkalan, AKBP Wiwit Ari Wibisono, SH, S.IK, MH atas jasanya bersama dengan anggota Polsek jajaran Polres Bangkalan.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>Created by.tara &copy; 2025 Desa Blega. Semua Hak Dilindungi.</p>
+    </footer>
+
+    <script>
+        // JavaScript untuk toggle menunya
+        const navLink = document.getElementById('navLink');
+        const openMenu = document.getElementById('openMenu');
+        const closeMenu = document.getElementById('closeMenu');
+
+        openMenu.addEventListener('click', () => {
+            navLink.style.right = "0";
+        });
+
+        closeMenu.addEventListener('click', () => {
+            navLink.style.right = "-200px";
+        });
+    </script>
+</body>
+</html>

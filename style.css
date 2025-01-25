@@ -1,0 +1,478 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.header {
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(Kantor\ Blega.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+#overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.9); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; 
+}
+
+.popup {
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    max-width: 400px;
+    width: 90%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.popup h2 {
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.popup p {
+    margin-bottom: 20px;
+    color: #666;
+}
+
+.popup button {
+    padding: 10px 20px;
+    background-color: #00FFFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.popup button:hover {
+    background: #0000FF;
+    border: 1px solid #0000FF;
+}
+nav {
+    display: flex;
+    padding: 10px 20px;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+nav img {
+    height: 60px;
+    margin-right: 10px;
+}
+
+.nav-link {
+    flex: 1;
+    text-align: right;
+    position: relative;
+    background: transparent;
+    height: auto;
+    width: auto;
+    top: auto;
+    right: auto;
+    display: flex;
+    justify-content: flex-end;
+    z-index: 2;
+}
+
+.nav-link ul {
+    display: flex;
+    padding: 0;
+}
+
+.nav-link ul li {
+    list-style: none;
+    margin: 0 12px;
+}
+
+.nav-link ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.nav-link ul li::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #00FFFF;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.nav-link ul li:hover::after {
+    width: 100%;
+}
+
+.text-box {
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+.text-box h1 {
+    font-size: 40px;
+}
+
+.text-box p {
+    margin: 10px 0 40px;
+    font-size: 14px;
+    color: #fff;
+}
+nav .fa {
+    display: none;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+@media (max-width: 700px) {
+    .text-box h1 {
+        font-size: 20px;
+    }
+
+    .nav-link ul {
+        padding: 30px;
+        display: block;
+    }
+
+    .nav-link ul li {
+        display: block;
+        margin: 8px 0;
+    }
+
+    .nav-link {
+        position: absolute;
+        background: #00FFFF;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        transition: 0.5s;
+    }
+
+    nav .fa {
+        display: block;
+        color: #fff;
+        margin: 10px;
+    }
+}
+
+.news {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+
+h1 {
+    font-size: 36px;
+    font-weight: 600;
+}
+
+.row {
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.news-col {
+    flex-basis: 31%;
+    background: #fff3f3;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+h3{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+}
+.news-col:hover{
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+}
+@media(max-width: 700px){
+    .row{
+        flex-direction: column;
+    }
+}
+.event{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+    justify-content: center;
+}
+.event-col{
+    flex-basis: 31%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+    align-items: center;
+}
+.event-col img{
+    width: 100%;
+    border-radius: 10px;
+    max-width: 300px;
+}
+.event-col p{
+    padding: 0;
+}
+footer {
+    background-color: #2c3e50; 
+    color: #ffffff; 
+    text-align: center; 
+    padding: 15px 10px; 
+    font-family: Arial, sans-serif; 
+    font-size: 14px; 
+    border-top: 2px solid #1abc9c; 
+}
+
+footer p {
+    margin: 0; 
+}
+.sub-header{
+    height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(Kantor\ Blega.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+}
+.profile-content {
+    width: 80%;
+    margin: auto;
+    padding: 50px 0;
+    line-height: 1.8;
+}
+
+.profile-content h1, h2 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.profile-content p {
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+.profile-content ul {
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.profile-content table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+.profile-content table th, .profile-content table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+.profile-content table th {
+    background-color: #00FFFF;
+    color: white;
+}
+.awards {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding: 50px 0;
+}
+
+.awards h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.awards p {
+    font-size: 1.1em;
+    margin-bottom: 30px;
+    line-height: 1.8;
+    color: #555;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.award-col {
+    flex: 1 1 calc(33.333% - 20px);
+    margin: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.award-col img {
+    width: 100%;
+    height: auto;
+    border-bottom: 3px solid #00FFFF;
+}
+
+.award-col h3 {
+    margin: 15px 0;
+    color: #333;
+    font-size: 1.5em;
+}
+
+.award-col p {
+    padding: 0 15px 15px;
+    font-size: 1em;
+    line-height: 1.5;
+}
+.services {
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+}
+
+.services h1 {
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+}
+
+.services p {
+    text-align: center;
+    margin-bottom: 40px;
+    color: #777;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.service-col {
+    flex: 1 1 calc(33.333% - 40px);
+    background: white;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.service-col h3 {
+    color: #3498db;
+    margin-bottom: 15px;
+}
+
+.service-col p {
+    color: #555;
+}
+
+.service-col:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+.contact {
+    padding: 50px 20px;
+    background-color: #fff;
+}
+
+.contact h1 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.contact p {
+    margin-bottom: 40px;
+    color: #777;
+    text-align: center;
+}
+
+.contact .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.contact-col {
+    flex: 1 1 calc(33.333% - 40px);
+    background: white;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.contact-col i {
+    font-size: 40px;
+    color: #3498db;
+    margin-bottom: 10px;
+}
+
+.contact-col h3 {
+    color: #3498db;
+    margin-bottom: 15px;
+}
+
+.contact-col:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+form {
+    max-width: 600px;
+    margin: 30px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+form input, form textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+form button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+form button:hover {
+    background-color: #2878b5;
+}

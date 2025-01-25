@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service - Website Desa Blega</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="logo bangkalan mdr.png" alt="Logo Desa"></a>
+            <div class="nav-link" id="navLink">
+                <i class="fa fa-times" id="closeMenu"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="Profile.html">PROFILE</a></li>
+                    <li><a href="Award.html">AWARD</a></li>
+                    <li><a href="#">SERVICE</a></li>
+                    <li><a href="CONTACT.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" id="openMenu"></i>
+        </nav>
+        <div class="text-box">
+            <h1>Layanan Desa Blega</h1>
+            <p>Melayani masyarakat dengan sepenuh hati</p>
+        </div>
+    </section>
+
+    <section class="services">
+        <h1>Layanan Kami</h1>
+        <p>Berikut adalah berbagai layanan yang disediakan oleh Pemerintah Desa Blega untuk masyarakat:</p>
+
+        <div class="row">
+            <div class="service-col">
+                <h3>Pembuatan Surat Keterangan</h3>
+                <p>Pemerintah Desa menyediakan layanan pembuatan surat keterangan seperti Surat Keterangan Domisili, Surat Keterangan Tidak Mampu, dan Surat Keterangan Usaha.</p>
+            </div>
+            <div class="service-col">
+                <h3>Pengelolaan Administrasi Kependudukan</h3>
+                <p>Warga dapat mengurus berbagai administrasi kependudukan seperti pembuatan Kartu Keluarga (KK), Akta Kelahiran, dan KTP.</p>
+            </div>
+            <div class="service-col">
+                <h3>Program Pelatihan dan Pemberdayaan</h3>
+                <p>Pemerintah Desa Blega secara rutin mengadakan pelatihan untuk masyarakat, seperti pelatihan wirausaha, pertanian, dan keterampilan lainnya guna mendukung ekonomi warga.</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="service-col">
+                <h3>Pelayanan Kesehatan Desa</h3>
+                <p>Puskesmas Desa Blega menyediakan layanan kesehatan dasar, imunisasi, dan penyuluhan kesehatan untuk warga.</p>
+            </div>
+            <div class="service-col">
+                <h3>Pembangunan dan Perbaikan Infrastruktur</h3>
+                <p>Pemerintah Desa bekerja sama dengan masyarakat dalam pembangunan jalan, jembatan, dan fasilitas umum lainnya.</p>
+            </div>
+            <div class="service-col">
+                <h3>Layanan Bantuan Sosial</h3>
+                <p>Desa menyediakan program bantuan sosial bagi masyarakat yang membutuhkan, seperti bantuan sembako, BLT, dan program lainnya.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>Created by.tara &copy; 2025 Desa Blega. Semua Hak Dilindungi.</p>
+    </footer>
+
+    <script>
+        // JavaScript untuk toggle menu
+        const navLink = document.getElementById('navLink');
+        const openMenu = document.getElementById('openMenu');
+        const closeMenu = document.getElementById('closeMenu');
+
+        openMenu.addEventListener('click', () => {
+            navLink.style.right = "0";
+        });
+
+        closeMenu.addEventListener('click', () => {
+            navLink.style.right = "-200px";
+        });
+    </script>
+</body>
+</html>

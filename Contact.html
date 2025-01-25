@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Kontak Desa Blega</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="logo bangkalan mdr.png" alt="Logo Desa"></a>
+            <div class="nav-link" id="navLink">
+                <i class="fa fa-times" id="closeMenu"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="Profile.html">PROFILE</a></li>
+                    <li><a href="Award.html">AWARD</a></li>
+                    <li><a href="Service.html">SERVICE</a></li>
+                    <li><a href="Contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" id="openMenu"></i>
+        </nav>
+        <div class="text-box">
+            <h1>Kontak Desa Blega</h1>
+            <p>Hubungi Kami untuk Informasi dan Bantuan</p>
+        </div>
+    </section>
+
+    <section class="contact">
+        <h1>Hubungi Kami</h1>
+        <p>Silakan gunakan informasi berikut untuk menghubungi Desa Blega.</p>
+        <div class="row">
+            <div class="contact-col">
+                <i class="fa fa-map-marker-alt"></i>
+                <h3>Alamat</h3>
+                <p>Jl. Raya Blega No.123, Kecamatan Blega, Kabupaten Bangkalan, Madura</p>
+            </div>
+            <div class="contact-col">
+                <i class="fa fa-phone"></i>
+                <h3>Telepon</h3>
+                <p>+62 812-3456-7890</p>
+            </div>
+            <div class="contact-col">
+                <i class="fa fa-envelope"></i>
+                <h3>Email</h3>
+                <p>desa.blega@bangkalan.go.id</p>
+            </div>
+        </div>
+        <h2>Kirim Pesan</h2>
+        <form action="mailto:desa.blega@bangkalan.go.id" method="post" enctype="text/plain">
+            <input type="text" name="name" placeholder="Nama Anda" required>
+            <input type="email" name="email" placeholder="Email Anda" required>
+            <textarea name="message" rows="5" placeholder="Pesan Anda" required></textarea>
+            <button type="submit" class="hero-btn">Kirim Pesan</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>Created by.tara &copy; 2025 Desa Blega. Semua Hak Dilindungi.</p>
+    </footer>
+
+    <script>
+        // JavaScript untuk toggle menu
+        const navLink = document.getElementById('navLink');
+        const openMenu = document.getElementById('openMenu');
+        const closeMenu = document.getElementById('closeMenu');
+
+        openMenu.addEventListener('click', () => {
+            navLink.style.right = "0";
+        });
+
+        closeMenu.addEventListener('click', () => {
+            navLink.style.right = "-200px";
+        });
+    </script>
+</body>
+</html>

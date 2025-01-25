@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Desa Blega</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div id="overlay">
+        <div class="popup">
+            <h2>Selamat Datang di Website Desa Blega</h2>
+            <p>Tekan tombol "Learn More" untuk melanjutkan.</p>
+            <button id="learn-more-btn">Learn More</button>
+        </div>
+    </div>
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="logo bangkalan mdr.png" alt="Logo Desa"></a>
+            <div class="nav-link" id="navLink">
+                <i class="fa fa-times" id="closeMenu"></i>
+                <ul>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="Profile.html">PROFILE</a></li>
+                    <li><a href="Award.html">AWARD</a></li>
+                    <li><a href="Service.html">SERVICE</a></li>
+                    <li><a href="Contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" id="openMenu"></i>
+        </nav>
+        <div class="text-box">
+            <h1>Website Desa Blega</h1>
+            <p>Kecamatan Blega, Kabupaten Bangkalan<br>Madura</p>
+        </div>
+    </section>
+
+    <section class="news">
+        <h1>INFORMASI</h1>
+
+        <div class="row">
+            <div class="news-col">
+                <h3>Digitalisasi</h3>
+                <p>Pemerintah Kecamatan Blega resmi meluncurkan program
+                     Digitalisasi Desa pada Jumat, 19 Januari 2025. 
+                     Program ini bertujuan untuk meningkatkan akses informasi 
+                     dan pelayanan publik berbasis digital di seluruh desa 
+                     di wilayah kecamatan.</p>
+            </div>
+            <div class="news-col">
+                <h3>Peningkatan Jalan</h3>
+                <p>Pemerintah Kabupaten Bangkalan mulai memperbaiki 
+                    dan meningkatkan kualitas jalan utama di Kecamatan Blega. 
+                    Proyek peningkatan jalan ini meliputi pelebaran dan pengaspalan 
+                    ulang sepanjang 10 kilometer di jalan penghubung antara Blega 
+                    dan kecamatan tetangga.</p>
+            </div>
+            <div class="news-col">
+                <h3>Pasar Terbesar</h3>
+                <p>Pasar Blega di Bangkalan, Madura, adalah pasar buah terbesar di Madura. 
+                    Di sini, pengunjung bisa menemukan berbagai buah segar seperti durian, rambutan, 
+                    dan mangga. Selain buah, pasar ini juga menjual sayuran dan rempah-rempah, Pasar buahnya 
+                    buka 24 jam, sehingga pengunjung bisa berbelanja kapan saja.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="event">
+        <h1>Acara Tahunan</h1>
+        
+        <div class="row">
+            <div class="event-col">
+                <img src="festival kuliner.jpeg">
+                <h3>Festival Kuliner</h3>
+                <p>Acara tahunan yang merayakan Pasar Blega 
+                    sebagai pusat perdagangan buah terbesar di Madura. 
+                    Festival ini dimeriahkan dengan bazar buah, 
+                    lomba kuliner khas Madura, dan pertunjukan seni seperti s
+                    aronen dan ludruk.</p>
+            </div>
+            <div class="event-col">
+                <img src="rokat tase'.jpg">
+                <h3>Rokat Tase'</h3>
+                <p>
+                    Tradisi syukuran masyarakat pesisir atas hasil laut yang 
+                    melibatkan ritual pelepasan sesaji ke laut, diiringi pertunjukan 
+                    musik tradisional dan pesta rakyat.
+                </p>
+            </div><div class="event-col">
+                <img src="kerabhen sapeh.jpg">
+                <h3>Kerabhen sapeh</h3>
+                <p>Ajang balapan sapi yang menjadi ikon budaya Madura. 
+                    Di Blega, acara ini sering digelar dengan meriah, 
+                    dihadiri oleh masyarakat setempat dan pengunjung 
+                    dari luar daerah.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>Created by.tara &copy; 2025 Desa Blega. Semua Hak Dilindungi.</p>
+    </footer>
+
+
+    <script>
+        const learnMoreBtn = document.getElementById('learn-more-btn');
+    const overlay = document.getElementById('overlay');
+
+    learnMoreBtn.addEventListener('click', () => {
+        overlay.style.display = 'none'; 
+    });
+        const navLink = document.getElementById('navLink');
+        const openMenu = document.getElementById('openMenu');
+        const closeMenu = document.getElementById('closeMenu');
+
+        openMenu.addEventListener('click', () => {
+            navLink.style.right = "0";
+        });
+
+        closeMenu.addEventListener('click', () => {
+            navLink.style.right = "-200px";
+        });
+    </script>
+</body>
+</html>

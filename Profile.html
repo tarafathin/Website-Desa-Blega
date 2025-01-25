@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile - Desa Blega</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="logo bangkalan mdr.png" alt="Logo Desa"></a>
+            <div class="nav-link" id="navLink">
+                <i class="fa fa-times" id="closeMenu"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="#">PROFILE</a></li>
+                    <li><a href="AWARD.html">AWARD</a></li>
+                    <li><a href="SERVICE.html">SERVICE</a></li>
+                    <li><a href="CONTACT.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" id="openMenu"></i>
+        </nav>
+    </section>
+
+    <section class="profile-content">
+        <h1>Profil Desa Blega</h1>
+        <p>Desa Blega merupakan salah satu desa di Kecamatan Blega, Kabupaten Bangkalan, Madura. Desa ini memiliki ciri khas sebagai pusat perdagangan buah terbesar di Madura dan juga dikenal akan tradisi budaya yang unik dan kaya.</p>
+        
+        <h2>Sejarah Desa</h2>
+        <p>
+            Desa Blega memiliki sejarah panjang yang erat kaitannya dengan perkembangan perdagangan di pesisir Madura. Dahulu, desa ini merupakan salah satu pelabuhan kecil yang menjadi tempat transit hasil bumi dan laut. Seiring waktu, perdagangan berkembang pesat, terutama dengan keberadaan Pasar Blega yang menjadi ikon wilayah ini.
+        </p>
+        
+        <h2>Potensi Desa</h2>
+        <ul>
+            <li>**Ekonomi:** Desa ini memiliki potensi besar di sektor perdagangan, terutama perdagangan buah-buahan segar dan rempah-rempah. Pasar Blega merupakan daya tarik utama yang beroperasi selama 24 jam.</li>
+            <li>**Pariwisata:** Tradisi dan budaya seperti **Rokat Tase’** dan **Kerabhen Sapeh** menjadikan Desa Blega destinasi menarik bagi wisatawan lokal dan mancanegara.</li>
+            <li>**Sumber Daya Alam:** Lokasi geografisnya memungkinkan Desa Blega untuk memanfaatkan hasil bumi dan laut secara maksimal.</li>
+        </ul>
+        
+        <h2>Visi dan Misi Desa</h2>
+        <h3>Visi:</h3>
+        <p>"Menjadikan Desa Blega sebagai desa yang maju, mandiri, dan sejahtera melalui pembangunan berbasis potensi lokal dan kearifan budaya."</p>
+        <h3>Misi:</h3>
+        <ul>
+            <li>Meningkatkan kualitas pelayanan publik berbasis digital.</li>
+            <li>Mengembangkan potensi ekonomi desa melalui inovasi dan pemberdayaan masyarakat.</li>
+            <li>Melestarikan budaya lokal sebagai identitas masyarakat Desa Blega.</li>
+            <li>Meningkatkan infrastruktur desa untuk mendukung perekonomian dan kesejahteraan masyarakat.</li>
+        </ul>
+        
+        <h2>Struktur Pemerintahan Desa</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Jabatan</th>
+                    <th>Nama</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Kepala Desa</td>
+                    <td>Bapak Achmad Sabrowi S.H</td>
+                </tr>
+                <tr>
+                    <td>Sekretaris Desa</td>
+                    <td>Ibu Aminarsih</td>
+                </tr>
+                <tr>
+                    <td>Kepala Urusan Keuangan</td>
+                    <td>Bapak Erwan Kurniawan</td>
+                </tr>
+                <tr>
+                    <td>Kepala Urusan Pembangunan</td>
+                    <td>Ibu Fatonah</td>
+                </tr>
+            </tbody>
+        </table>
+        </div>
+    </section>
+    
+
+    <footer>
+        <p>Created by.tara &copy; 2025 Desa Blega. Semua Hak Dilindungi.</p>
+    </footer>
+
+    <script>
+        // JavaScript untuk toggle menunya
+        const navLink = document.getElementById('navLink');
+        const openMenu = document.getElementById('openMenu');
+        const closeMenu = document.getElementById('closeMenu');
+
+        openMenu.addEventListener('click', () => {
+            navLink.style.right = "0";
+        });
+
+        closeMenu.addEventListener('click', () => {
+            navLink.style.right = "-200px";
+        });
+    </script>
+</body>
+</html>
